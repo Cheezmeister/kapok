@@ -1,2 +1,12 @@
 language: node_js
 script: gulp
+deploy:
+  provider: releases
+  api_key:
+    secure: KBuA8rkMgxvZRZc6KKoP255fjlYdpZVahE2amOW+gu8I6eQ9pVBxX4DmM/9f1xI2jr9mDicyVPLkPtjVivhkf6KNcwyZmG3VvUWiI+TDy7tdkk/Ph7h/DXdZ+jJjefBw9f/h/8ND1AFeM8J1fQ9ShbGzdgqw7GOX+yItbrdnSkiRECtdgJI/aIzlsV0/MMU2uPPnT7ZUoBSaeTkm6Vfyq/fg17orjiswD1nizc81N5tS163IdG0T8Me1l8bUged9NIyJb02no9miPXb9+rLraRdIv9tOVfFP6wMtaxwOfTtl2mX88A36AfKX1WQiItzoovHTkzv4tZDhG9xjq+bw6+km4gUdKTwPuukPdx95XpIypbYy3e0qpqYiKEMVoTjJICz/oF15VFH4Cr/LAoxf+GkRTSTJupQoahqzWLgh0kF99tyNT4xu8qMSauOImXHoRxYTpfi/eHDTBtjrGC5mKlxLw+hpsAjhCHiA+X5NAlmj3raGS5pWNnFz8avHSJKP39JVT13G7c3dxWtK6O9y57Nug+G96AoRRxudbUOGhELq1b5F85LtdBKtTiJ2boeY1eQ/rik2tzy5Lzd6C1na371PQBMmScul371VaZkSi5ApeeewRyvsEYPIioZajhTs5FpVIioa3PcTXQAgaMjIc11K/Ie536exTV6jLfUWrE8=
+  file: 
+    - dist/kapok.js
+    - dist/kapok-core.css
+    - dist/kapok-full.css
+  on:
+    repo: Cheezmeister/kapok
