@@ -5,7 +5,7 @@ Overview
 
 It looks something like this:
 
-![screenshot](FIXME)
+![screenshot](http://i.imgur.com/eHqlUxf.png)
 
 It was written in about a week while recovering from an expensive appendectomy, because I needed something like it and couldn't find anything satisfactory from the googles. As such it is a bit immature and probably has holes here and there, but it has tested stable on most modern browsers.
 
@@ -26,6 +26,11 @@ document.body.appendChild(kapok.render(someObject));
 ```
 
 Server-side use is not supported as a DOM is assumed.
+
+Kapok does not make use of UMD, AMD, or any other MD. Instead it takes a steaming dump on best practices and sticks its functionality into the global scope, because that's one less thing that might break a year from now when all the cool kids are using BBQMD instead. If you have a global var `kapok` that you don't want trampled, you should rename this module's references to it. Yes, all three of them.
+
+
+
 
 Acknowledgments
 ---------------
