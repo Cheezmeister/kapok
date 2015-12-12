@@ -15,9 +15,9 @@ It was written in about a week while recovering from an expensive appendectomy, 
 Installation
 ------------
 
-The recommended way to use Kapok is to simply drop `[kapok.js]` and `[kapok-full.css]` into your source tree and include them however you please.
+The recommended way to use Kapok is to simply drop `[kapok.js][]` and `[kapok-full.css][]` into your source tree and include them however you please.
 
-If you don't like the default styling or cannot override it to your satisfaction, use `[kapok-core.css]` instead, which has the bare minimum CSS for expand/collapse behaviour.
+If you don't like the default styling or cannot override it to your satisfaction, use `[kapok-core.css][]` instead, which has the bare minimum CSS for expand/collapse behaviour.
 
 [kapok.js]: https://github.com/Cheezmeister/kapok/releases/download/v0.0.2-alpha/kapok.js
 [kapok-full.css]: https://github.com/Cheezmeister/kapok/releases/download/v0.0.2-alpha/kapok-full.css
