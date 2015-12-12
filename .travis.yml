@@ -10,3 +10,4 @@ deploy:
     - dist/kapok-full.css
   on:
     repo: Cheezmeister/kapok
+    tags: true
