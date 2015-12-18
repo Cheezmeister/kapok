@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/Cheezmeister/kapok.svg?branch=master)](https://travis-ci.org/Cheezmeister/kapok)
+[![devDependency Status](https://david-dm.org/Cheezmeister/kapok/dev-status.svg)](https://david-dm.org/cheezmeister/kapok#info=devDependencies)
 
 Overview
 --------
