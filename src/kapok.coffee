@@ -16,10 +16,14 @@
     retVal
 
   makeTree = (tree) ->
+
+    if typeof tree == 'string'
+      tree = JSON.parse tree
+
     retVal = makeElement 'ol', treeClass
     for key of tree
       value = tree[key]
-      
+
       li = makeElement 'li', itemClass
 
       # This value is itself an object (or array).
@@ -35,7 +39,7 @@
         li.appendChild label
         li.appendChild makeTree(value)
 
-      # This value is a leaf. 
+      # This value is a leaf.
       # Create key-value item. Omit keys for array elements.
       else
         if Array.isArray(tree)
