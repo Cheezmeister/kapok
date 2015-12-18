@@ -8,8 +8,11 @@ module.exports = (config) ->
       , 'dist/kapok.js'
     ]
     exclude: []
-    preprocessors: {}
-    reporters: [ 'progress' ]
+    preprocessors:
+      'dist/kapok.js': 'coverage'
+    reporters: 'progress coverage coveralls'.split ' '
+    coverageReporter:
+      type: 'lcov'
     port: 9876
     colors: true
     logLevel: config.LOG_INFO

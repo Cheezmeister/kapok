@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/Cheezmeister/kapok.svg?branch=master)](https://travis-ci.org/Cheezmeister/kapok)
-[![devDependency Status](https://david-dm.org/Cheezmeister/kapok/dev-status.svg)](https://david-dm.org/cheezmeister/kapok#info=devDependencies)
+# Kapok [![NPM version](https://img.shields.io/npm/v/kapok.svg)](https://www.npmjs.com/package/kapok) [![devDependency Status](https://david-dm.org/Cheezmeister/kapok/dev-status.svg)](https://david-dm.org/cheezmeister/kapok#info=devDependencies) [![Build Status](https://travis-ci.org/Cheezmeister/kapok.svg?branch=master)](https://travis-ci.org/Cheezmeister/kapok)
 
 Overview
 --------

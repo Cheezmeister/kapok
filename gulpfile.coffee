@@ -5,13 +5,11 @@ KARMA_CONFIG =  "#{__dirname}/karma.conf.js"
 gulp = require('gulp')
 coffee = require('gulp-coffee')
 stylus = require('gulp-stylus')
-uglify = require('gulp-uglify')
 
 gulp.task 'coffee', ->
   # Sources
   gulp.src "#{SOURCE_FOLDER}/*.coffee"
       .pipe coffee bare: true
-      .pipe uglify()
       .pipe gulp.dest DIST_FOLDER
   # Tests
   gulp.src "tst/*.coffee"
