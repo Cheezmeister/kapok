@@ -17,6 +17,10 @@ gulp.task 'coffee', ->
   gulp.src "tst/*.coffee"
       .pipe coffee bare: true
       .pipe gulp.dest 'spec'
+  # Config files
+  gulp.src 'karma.conf.coffee'
+      .pipe coffee bare: true
+      .pipe gulp.dest '.'
 
 
 gulp.task 'stylus', ->
