@@ -1,10 +1,13 @@
 {
   "name": "kapok",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTML/CSS3 collapsible tree viewer for JS objects",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "preversion": "",
+    "version": "./refresh-versions.sh",
+    "postversion": "git push && git push --tags"
   },
   "author": "Brendan 'Cheezmeister' Luchen",
   "license": "Zlib",

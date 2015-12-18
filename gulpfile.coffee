@@ -28,7 +28,7 @@ gulp.task 'stylus', ->
       .pipe stylus compress: true
       .pipe gulp.dest DIST_FOLDER
 
-gulp.task 'test', (done) ->
+gulp.task 'test', ['default'], (done) ->
   Server = require('karma').Server
   new Server(
     {configFile: KARMA_CONFIG, singleRun: true },
@@ -36,7 +36,7 @@ gulp.task 'test', (done) ->
   ).start()
 
 
-gulp.task 'tdd', (done) ->
+gulp.task 'tdd', ['default'], (done) ->
   Server = require('karma').Server
   new Server(
     {configFile: KARMA_CONFIG},
