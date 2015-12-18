@@ -6,7 +6,6 @@ gulp = require('gulp')
 coffee = require('gulp-coffee')
 stylus = require('gulp-stylus')
 uglify = require('gulp-uglify')
-jasmine = require 'gulp-jasmine'
 
 gulp.task 'coffee', ->
   # Sources
@@ -24,10 +23,6 @@ gulp.task 'stylus', ->
   gulp.src "#{SOURCE_FOLDER}/*.styl"
       .pipe stylus compress: true
       .pipe gulp.dest DIST_FOLDER
-
-# gulp.task 'test', ->
-#   gulp.src ['test/*.spec.js', "#{DIST_FOLDER}/greeter.js"]
-#       .pipe jasmine(verbose: true)
 
 gulp.task 'test', (done) ->
   Server = require('karma').Server
