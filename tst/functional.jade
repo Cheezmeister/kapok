@@ -1,0 +1,65 @@
+html
+  head
+    title Kapok Functional Tests
+    script(src='dist/kapok.js')
+    link(href='dist/kapok-full.css' rel='stylesheet')
+
+    style.
+      div.case pre.input, .case .output {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+  body
+    script kapok || alert("Kapok wasn't loaded properly. Check /dist folder?");
+
+    h2 Kapok Functional Tests
+    p: a(href='/coverage') Coverage Report
+    p: a(href='https://github.com/Cheezmeister/kapok') On GitHub
+
+    h3 Basic
+    #basic.case
+      pre#basicinput.input.
+        {
+          "string": "string",
+          "number": 1234,
+          "array": [1, 2, 3],
+          "subobject": {
+            "foo": "bar",
+            "baz": "buzz"
+          },
+          "array_of_object": [
+            {
+              "alpha": "beta",
+              "gamma": "delta",
+              "ary": ["one", 2, null]
+            }, {
+              "herp": "derp",
+              "empty": {}
+            }
+          ]
+        }
+      #basicoutput.output
+
+    h3 Degenerate
+    #degen.case
+      pre#degeninput.input.
+        {
+        }
+      #degenoutput.output
+
+    h3 Array
+    #array.case
+      pre#arrayinput.input.
+        [1, "two", 3, "four", 5]
+      #arrayoutput.output
+
+
+
+    script.
+      'basic degen array'.split(' ').map(function(casename) {
+        var text = document.getElementById(casename + 'input').innerHTML;
+        var el = kapok.render(text);
+        document.getElementById(casename + 'output').appendChild(el);
+      });
