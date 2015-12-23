@@ -11,6 +11,10 @@
   },
   "author": "Brendan 'Cheezmeister' Luchen",
   "license": "Zlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Cheezmeister/kapok.git"
+  },
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.0",
