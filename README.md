@@ -1,9 +1,9 @@
-# Kapok [![NPM version](https://img.shields.io/npm/v/kapok.svg)](https://www.npmjs.com/package/kapok) [![devDependency Status](https://david-dm.org/Cheezmeister/kapok/dev-status.svg)](https://david-dm.org/cheezmeister/kapok#info=devDependencies) [![Build Status](https://travis-ci.org/Cheezmeister/kapok.svg?branch=master)](https://travis-ci.org/Cheezmeister/kapok)
+# Kapok [![NPM version](https://img.shields.io/npm/v/kapok.svg)](https://www.npmjs.com/package/kapok) [![devDependency Status](https://david-dm.org/Cheezmeister/kapok/dev-status.svg)](https://david-dm.org/cheezmeister/kapok#info=devDependencies) [![Build Status](https://travis-ci.org/Cheezmeister/kapok.svg?branch=master)](https://travis-ci.org/Cheezmeister/kapok) [![Code Climate](https://codeclimate.com/github/Cheezmeister/kapok/badges/gpa.svg)](https://codeclimate.com/github/Cheezmeister/kapok)
 
 Overview
 --------
 
-**Kapok** is a simple, static(ish) collapsible tree generator for JS objects (and by extension, JSON). It aims to be easy to use for both developers and end-users, but reasonably flexible where applicable.
+**Kapok** is a simple, static(ish) collapsible tree generator for JS objects (and by extension, JSON). It aims to be easy to use for both developers and end-users, but reasonably flexible where applicable. You can [try it here](http://cheezmeister.github.io/kapok).
 
 It looks something like this:
 

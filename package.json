@@ -2,7 +2,6 @@
   "name": "kapok",
   "version": "0.0.4",
   "description": "HTML/CSS3 collapsible tree viewer for JS objects",
-  "main": "index.js",
   "scripts": {
     "test": "gulp test",
     "preversion": "",
@@ -10,7 +9,7 @@
     "postversion": "git push && git push --tags"
   },
   "author": "Brendan 'Cheezmeister' Luchen",
-  "license": "Zlib",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/Cheezmeister/kapok.git"
