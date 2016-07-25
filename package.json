@@ -4,7 +4,7 @@
   "description": "HTML/CSS3 collapsible tree viewer for JS objects",
   "scripts": {
     "test": "gulp test",
-    "preversion": "",
+    "preversion": "npm test",
     "version": "./refresh-versions.sh",
     "postversion": "git push && git push --tags"
   },
@@ -24,6 +24,7 @@
     "karma": "0.13.22",
     "karma-coverage": "1.1.1",
     "karma-coveralls": "1.1.2",
-    "karma-jasmine": "1.0.2"
+    "karma-jasmine": "1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1"
   }
 }
