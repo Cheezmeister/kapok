@@ -19,9 +19,9 @@ The recommended way to use Kapok is to simply drop [`kapok.js`][js] and [`kapok-
 
 If you don't like the default styling or cannot override it to your satisfaction, use [`kapok-core.css`][corecss] instead, which has the bare minimum CSS for expand/collapse behaviour.
 
-[js]: https://github.com/Cheezmeister/kapok/releases/download/v0.0.4/kapok.js
-[fullcss]: https://github.com/Cheezmeister/kapok/releases/download/v0.0.4/kapok-full.css
-[corecss]: https://github.com/Cheezmeister/kapok/releases/download/v0.0.4/kapok-core.css
+[js]: https://github.com/Cheezmeister/kapok/releases/download/v0.0.5/kapok.js
+[fullcss]: https://github.com/Cheezmeister/kapok/releases/download/v0.0.5/kapok-full.css
+[corecss]: https://github.com/Cheezmeister/kapok/releases/download/v0.0.5/kapok-core.css
 
 Usage
 -----
