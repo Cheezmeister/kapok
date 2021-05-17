@@ -5,7 +5,7 @@ KARMA_CONFIG =  "#{__dirname}/karma.conf.js"
 gulp = require('gulp')
 coffee = require('gulp-coffee')
 stylus = require('gulp-stylus')
-jade = require('gulp-jade')
+jade = require('gulp-pug')
 
 gulp.task 'coffee', ->
   # Sources
@@ -17,34 +17,35 @@ gulp.task 'coffee', ->
       .pipe coffee bare: true
       .pipe gulp.dest 'spec'
   # Config files
-  gulp.src 'karma.conf.coffee'
+  return gulp.src 'karma.conf.coffee'
       .pipe coffee bare: true
       .pipe gulp.dest '.'
 
 
 gulp.task 'stylus', ->
-  gulp.src "#{SOURCE_FOLDER}/*.styl"
+  return gulp.src "#{SOURCE_FOLDER}/*.styl"
       .pipe stylus compress: true
       .pipe gulp.dest DIST_FOLDER
 
 gulp.task 'jade', ->
-  gulp.src 'tst/*.jade'
+  return gulp.src 'tst/*.jade'
       .pipe jade()
       .pipe gulp.dest '.'
 
-gulp.task 'test', ['default'], (done) ->
+exports.default = gulp.task 'default', gulp.series 'coffee', 'stylus'
+
+gulp.task 'test', gulp.series 'default', (done) ->
   Server = require('karma').Server
   new Server(
     {configFile: KARMA_CONFIG, singleRun: true },
-    done
+    done()
   ).start()
 
 
-gulp.task 'tdd', ['default'], (done) ->
+gulp.task 'tdd', gulp.series 'default', (done) ->
   Server = require('karma').Server
   new Server(
     {configFile: KARMA_CONFIG},
-    done
+    done()
   ).start()
 
-gulp.task 'default', ['coffee', 'stylus']
