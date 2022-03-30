@@ -1,0 +1,16 @@
+version: v1.0
+name: Node JS
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: Build and Test
+    task:
+      jobs:
+        - name: yarn install
+          commands:
+            - sem-version node 17
+            - checkout
+            - yarn install
+            - yarn test
