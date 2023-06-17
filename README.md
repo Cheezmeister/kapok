@@ -37,7 +37,9 @@ document.body.appendChild(kapok.render(someObject));
 
 Server-side use is not supported as a DOM is assumed.
 
-Kapok does not make use of UMD, AMD, or any other MD. Instead it takes a steaming dump on best practices and sticks its functionality into the global scope, because that's one less thing that might break a year from now when all the cool kids are using BBQMD instead. If you have a global var `kapok` that you don't want trampled, you should rename this module's references to it. Yes, all three of them.
+Kapok does not make use of [UMD](https://github.com/umdjs/umd), [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD), or any other MD. It doesn't [export](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export) anything either.
+
+Instead it takes a steaming dump on best practices and sticks its functionality into the global scope, because that's one less thing that might break a year from now when all the cool kids are using BBQMD instead. If you have a global var `kapok` that you don't want trampled, you should rename this module's references to it. Yes, all three of them.
 
 
 
