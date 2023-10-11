@@ -1,6 +1,5 @@
 # Kapok
 [![NPM version](https://img.shields.io/npm/v/kapok.svg)](https://www.npmjs.com/package/kapok)
-[![devDependency Status](https://david-dm.org/Cheezmeister/kapok/dev-status.svg)](https://david-dm.org/cheezmeister/kapok#info=devDependencies)
 [![Build Status](https://cheezmeister.semaphoreci.com/badges/kapok/branches/master.svg)](https://cheezmeister.semaphoreci.com/projects/kapok)
 [![Code Climate](https://codeclimate.com/github/Cheezmeister/kapok/badges/gpa.svg)](https://codeclimate.com/github/Cheezmeister/kapok)
 
