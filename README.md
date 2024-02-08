@@ -10,7 +10,7 @@ Overview
 
 It looks something like this:
 
-![screenshot](https://camo.githubusercontent.com/f9eb362e14f9c1cbf2d4a04c00fb735fdaafaa70/687474703a2f2f692e696d6775722e636f6d2f6548716c5578662e706e67)
+![image](https://github.com/Cheezmeister/kapok/assets/576853/238cc5c4-53d2-40ec-a0f0-10bfe6c7aa0c)
 
 It was written in about a week while recovering from an expensive appendectomy, because I needed something like it and couldn't find anything satisfactory from the googles. As such it is a bit immature and probably has holes here and there, but it has tested stable on most modern browsers.
 
